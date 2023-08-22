@@ -11,23 +11,20 @@
       <div class="container">
         <div class="login-form">
           <h2>Login to Your Account</h2>
-          <form action="" method="post">
+          <form action="" method="post" onsubmit="redirect(event)">
             <label for="account-type">Choose Account Type:</label>
-            <select id="account-type">
-              <option value=""></option>
-              <option value="organisation">organisation</option>
-              <option value="volunteer">volunteer</option>
+            <select id="account-type" name="account-type">
+             <option value="">-select one-</option>
+             <option value="organisation">organisation</option>
+             <option value="volunteer">volunteer</option>
             </select>
             <label for="email">Email:</label>
             <input type="text" id="username" name="username" required>
           
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-  
-            <label for="password">leave this field empty</label>
-            <input type="password" id="password" name="password" required>
           
-            <input type="submit" value="login" onclick=redirect()>
+            <input type="submit" value="Login">
           </form>
         </div>
       </div>
@@ -39,17 +36,17 @@
       <span>&copy; 2023 Your Simple Ecommerce Website</span>
     </footer>
     <script>
-      function redirect(){
+      function redirect(event){
+          event.preventDefault();
           
-          var select=document.getElementById("account-type");
-          var selectedValue=select.value;
+          var select = document.getElementById("account-type");
+          var selectedValue = select.value;
           
-          if(selectedValue == "organisation"){
-              
-              window.location.assign("/loginfororganisation.html");
-              
-              
-          } else if(selectedValue == "volunteer"){
-              window.location.assign("/loginforindividual.html");
+          if(selectedValue === "organisation"){
+              window.location.assign("/OrganisationFeed.html");
+          } else if(selectedValue === "volunteer"){
+              window.location.assign("/IndividualFeed.html");
           }
       }
+    </script>
+</body>
