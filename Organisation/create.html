@@ -1,0 +1,54 @@
+<link rel="stylesheet" type="text/css" href="create.css">
+<body>
+    <header>
+      <nav>
+        <a href="/home.html">Home</a>
+        <a href="/login.html">Login</a>
+        <a href="/signup.html">Signup</a>
+      </nav>
+    </header>
+    <div class="bg-image">
+    <div class="container">
+      <div class="post-form">
+        <h2>Create New Post</h2>
+          <label for="event-name">Event Name:</label>
+          <input type="text" id="event-name" name="event-name" required>
+          
+          <label for="event-date">Event Date:</label>
+          <input type="date" id="event-date" name="event-date" required>
+
+          <label for="event-time">Event Time:</label>
+          <input type="datetime" id="event-time" name="event-time" required>
+
+          <label for="event-duration">Duration of the Event:</label>
+          <input type="text" id="event-duration" name="event-duration" required>
+
+          <label for="event-location">Location of the Event:</label>
+          <input type="text" id="event-location" name="event-location" required>
+
+          <label for="no-of-volunteers">Number of volunteers:</label>
+          <input type="number" id="no-of-volunteers" name="no-of-volunteers" required>
+
+          <label for="manager-name">Manager Name:</label>
+          <input type="text" id="manager-name" name="manager-name" required>
+
+          <label for="contact-details">Contact details of manager:</label>
+          <input type="number" id="contact-details" name="contact-details" required>
+          
+          <label for="event-description">Description:</label>
+          <textarea id="event-description" name="event-description" rows="4"required></textarea>
+          
+          <label for="event-purpose">Purpose of the event:</label>
+          <textarea id="event-purpose" name="event-purpose" rows="2" required></textarea>
+
+          <input type="submit" value="Create Post">
+      </div>
+    </div>
+  </div>
+    <footer>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
+      <span>&copy; <script>document.write(new Date().getFullYear())</script> Volunteer Management System</span>
+    </footer>
+  </body>
