@@ -2,7 +2,8 @@
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
+  background-attachment: fixed;
 }
 
 body {
@@ -26,9 +27,14 @@ body {
     color: #ffffff;
     text-decoration: none;
     margin-left: 20px;
+    transition: 0.15s;
   }
   nav a:first-child {
     margin-left: 0;
+    
+  }
+  nav :hover{
+    opacity: 0.7;
   }
   .container {
     padding: 20px;
@@ -48,6 +54,10 @@ body {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    transition:  0.15s;
+  }
+  footer :hover{
+    opacity: 0.7;
   }
   p{
     color: #fff;
