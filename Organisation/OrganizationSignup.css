@@ -1,8 +1,8 @@
 .bg-image {
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./bg.jpg);
-    background-repeat: repeat-x;
-    background-size: cover;
-    height: 115vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
   }
   body {
     font-family: Arial, sans-serif;
@@ -25,9 +25,13 @@
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
+    transition: 0.15s;
   }
   nav a:first-child {
     margin-left: 0;
+  }
+  nav :hover{
+    opacity: 0.7;
   }
   .container {
     padding: 20px;
@@ -47,13 +51,22 @@
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    transition: 0.15s;
   }
+
+  footer :hover{
+    opacity: 0.7;
+  }
+  
   .login-form {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    border: 1px solid ;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #ccc;
     background-color: #f8f6f42a;
+    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
   }
   .login-form label,
   .login-form select,
@@ -65,9 +78,18 @@
     background-color: #dd632e;
     color: #fff;
     border: none;
+    border-radius: 25px;
     padding: 10px 20px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.15s;
   }
+  .login-form :hover[type="submit"]
+  {
+    background-color: #fff ;
+    color: #dd632e ;
+  }
+  
   label{
     color: #fff;
   }
