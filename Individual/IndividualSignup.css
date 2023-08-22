@@ -28,7 +28,7 @@ body {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
-    transition: opacity 0.15s;
+    transition: 0.15s;
   }
   nav a:first-child {
     margin-left: 0;
@@ -54,7 +54,7 @@ body {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-    transition: opacity 0.15s;
+    transition: 0.15s;
   }
 
   footer :hover{
@@ -85,7 +85,7 @@ body {
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.15s;
+    transition: 0.15s;
     
   }
 
