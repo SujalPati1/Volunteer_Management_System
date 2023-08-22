@@ -1,10 +1,10 @@
-<body>
-    <link rel="stylesheet" href="OrganisationFeed.css">
+<link rel="stylesheet" href="OrganisationFeed.css">
+<body>   
     <header>
            <nav>
-             <a href="/home.html">Home</a>
-             <a href="/login.html">Login</a>
-             <a href="/signup.html">Signup</a>
+            <a href="/home.html">Home</a>
+            <a href="/login.html">Login</a>
+            <a href="/signup.html">Signup</a>
            </nav>
          </header>
        <footer>
@@ -13,11 +13,17 @@
            <a href="#">Contact Us</a>
            <span>&copy; <script>document.write(new Date().getFullYear())</script> Volunteer Management System</span>
          </footer>
-    organisation
-    <button type="button" onclick="createpost()">Create post</button>
-    <script>
-        function createpost(){
-            window.location.href = "/create.html";
-        }
-    </script>
+         <div class="bg-image">
+            <div class="container">
+              <div class="login-form">
+                organisation
+                <button type="button" onclick="createpost()">Create post</button>
+                <script>
+                    function createpost(){
+                        window.location.href = "/create.html";
+                    }
+                </script>
+                </div>
+            </div>
+         </div>
 </body>
